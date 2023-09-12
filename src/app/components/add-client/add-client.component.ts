@@ -68,11 +68,7 @@ if (data.length !=0) {
     this.files = arr1.concat(imgs);
   }
 
-  select(data: any) {
 
-console.log(data);
-
-  }
   addClient() {
     let arr:any = []
     let formData = new FormData();
