@@ -81,7 +81,7 @@ export class CartComponent {
       key: 'pk_test_51MxafiDlUdQmc698VQdKpvuamiY2xVoxKxhSnFad3hsxaBVSzZzGemOqvfUvnLQfp0HdPsNRBSrLUdeGDKCwDtSv0019vVzzac',
       locale: 'auto',
       token: function (stripeToken: any) {
-        console.log({ stripeToken })
+
         let email = stripeToken.stripeToken
         paymentStripe(stripeToken, email)
       }
@@ -114,7 +114,6 @@ export class CartComponent {
           key: 'pk_test_51MxafiDlUdQmc698VQdKpvuamiY2xVoxKxhSnFad3hsxaBVSzZzGemOqvfUvnLQfp0HdPsNRBSrLUdeGDKCwDtSv0019vVzzac',
           locale: 'auto',
           token: function (stripeToken: any) {
-            console.log(stripeToken)
             alert('Payment has been successfull!');
           }
         });

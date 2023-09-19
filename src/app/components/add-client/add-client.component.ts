@@ -41,11 +41,8 @@ if (data.length !=0) {
 
   }
   onItemSelect(item: any) {
-    console.log(item);
-
   }
   onSelectAll(items: any) {
-    console.log(items);
   }
   upload(event: any) {
     const { files } = event.target;

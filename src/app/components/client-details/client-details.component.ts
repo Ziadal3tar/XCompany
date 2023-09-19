@@ -11,7 +11,6 @@ export class ClientDetailsComponent {
 
   @Output() closeClientDetails:EventEmitter<any> = new EventEmitter<any>();
 ngOnInit(): void {
-  console.log(this.clientData);
 
 }
   // lineTransform = 'scaleX(0)';

@@ -66,7 +66,6 @@ export class OurClientsComponent implements OnInit {
   math(){
     var discount = (5.66454).toFixed(0);
     let sum = 456.564498
-    console.log(discount);
 
   }
 }

@@ -33,7 +33,7 @@ export class LogInComponent {
         }
       },
       (err: HttpErrorResponse) => {
-        console.log(err);
+
 
         if (err.error.message == 'in valid password') {
           this.passErr = 'Invalid Password';

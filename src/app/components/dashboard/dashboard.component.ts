@@ -87,7 +87,6 @@ export class DashboardComponent {
     this.allUser = allUsers?.filter(
       (item: any) => this.handelDate(new Date(item.createdAt)) == dateNaw
     );
-    console.log(dateNaw);
 
     this.allOrders = allOrders?.filter(
       (item: any) => this.handelDate(new Date(item.createdAt)) == dateNaw
@@ -244,7 +243,6 @@ export class DashboardComponent {
   }
 
   lastYear(allOrders: any, allUsers: any) {
-    console.log(new Date().getFullYear());
 
     this.allUser = allUsers?.filter(
       (item: any) =>
@@ -303,14 +301,12 @@ export class DashboardComponent {
 
   setData() {
     this.Earning = 0;
-    console.log(this.allOrders);
+
 
     this.Project = this.allOrders?.filter((item: any) => item.status == 'Done');
     for (let i = 0; i < this.allOrders?.length; i++) {
       const element = this.allOrders[i];
       if (element.status != 'Canceled') {
-        // console.log(element.service);
-
         this.Earning += element.service?.servicesPrice;
       }
     }
@@ -333,10 +329,10 @@ export class DashboardComponent {
       id,
       status,
     };
-    console.log(data);
+
 
     this.ReqsService.updateOrderStatus(data).subscribe((data: any) => {
-      console.log(data);
+
       if (data.message == 'Done') {
         this.SharedService.updateOrders();
       }

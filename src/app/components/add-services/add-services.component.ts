@@ -89,11 +89,10 @@ export class AddServicesComponent {
     }
   }
   prevent() {
-    console.log(this.servicesForm.controls['servicesName'].value);
+
     let name = this.servicesForm.controls['servicesName'].value;
     for (let i = 0; i < name.length; i++) {
       const element = name[i];
-      console.log(element);
       if (element == ',') {
         this.patternErr = 'you cant use (,) in services name';
         return
