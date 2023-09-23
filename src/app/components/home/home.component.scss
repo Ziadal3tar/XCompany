@@ -6,7 +6,13 @@ section {
       z-index: 3;
       right: 5%;
       top: -5%;
-
+.headerImg{
+  background-image: url(../../../assets/images/header/beautiful-young-woman-home-office-working-from-home-teleworking-concept_144627-46786.avif);
+  background-position: center;
+  background-size: cover;
+  // height: 100px;
+  // width: 500px;
+}
       // display: none;
       @media screen and (max-width:2000px) and (min-width:992px) {
         width: 900px !important;

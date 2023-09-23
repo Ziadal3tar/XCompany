@@ -10,7 +10,14 @@ nav {
     // margin-top: 0rem !important;
     padding-bottom: 1rem;
   }
-
+.main{
+  .logo{
+    background-image: url(../../../assets/images/preview-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+  }
+}
   .mainUl {
     justify-content: space-between;
 
